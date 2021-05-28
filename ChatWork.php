@@ -1,4 +1,3 @@
 <?php
-echo('ChatWork in');
-exit();
+echo('test echo');
 ?>
