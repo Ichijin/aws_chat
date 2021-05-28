@@ -1,4 +1,6 @@
 <?php
+echo('ChatWork in');
+exit();
 $dbhost = $_SERVER['start-aws-db-instance.cxulytbuqnlc.ap-northeast-1.rds.amazonaws.com'];
 $dbport = $_SERVER['3036'];
 $dbname = $_SERVER['aws_chat'];
