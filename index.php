@@ -27,16 +27,18 @@
                     <span class="talk-content">ご用をお聞かせください。</span>
                 </p>
             </div>
-            <div class="cp_box">
-                <div class="cp_iptxt cp_item">
-                    <input type="text" placeholder="お聞きになりたいこと" id="speech">
-                    <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-                </div>
-                <div class="cp_item">
-                    <input type="submit" value="送信" class="btn-gradient-orange" />
-                </div>
-                <div class="cp_item">
-                    <input type="submit" value="閉じる" class="btn-gradation-gray" />
+            <div class="cp_box_container">
+                <div class="cp_box">
+                    <div class="cp_iptxt cp_item">
+                        <input type="text" placeholder="お聞きになりたいこと" id="speech">
+                        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                    </div>
+                    <div class="cp_item">
+                        <input type="submit" value="送信" class="btn-gradient-orange" />
+                    </div>
+                    <div class="cp_item">
+                        <input type="submit" value="閉じる" class="btn-gradation-gray" />
+                    </div>
                 </div>
             </div>
         </div>
