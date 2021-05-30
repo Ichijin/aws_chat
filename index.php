@@ -7,16 +7,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="ここにサイト説明を入れます">
 <meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
-<link rel="stylesheet" href="css/style.css">
-<script src="js/openclose.js"></script>
-<script src="js/chatbot.js"></script>
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+<link rel="stylesheet" href="css/chatbot.css">
 </head>
 
-<body class="top">
+<body>
+    <div class="chatbot">
+        <div class="chatbot_ico">
+        </div>
+        <div class="chatbot_bord" style="display: none;">
+            <p class="chat-talk">
+                <span class="talk-icon">
+                <img src="[ファイルのurl]" alt="tartgeticon" width="XX" height="XX"/>
+                </span>
+                <span class="talk-content">[トーク内容を記載]</span>
+                </p>
+                <p class="chat-talk mytalk">
+                <span class="talk-icon">
+                <img src="[ファイルのurl]" alt="myicon" width="XX" height="XX"/>
+                </span>
+                <span class="talk-content">[トーク内容を記載]</span>
+            </p>
+        </div>
+	</div>
 
+    <p>
+        contentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontentscontents
+    </p>
+    <br>
 </body>
 </html>
+
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+<script>
+    $('.chatbot').on('click', function(){
+        $('.chatbot_ico').hide();
+        $('.chatbot_bord').show();
+    });
+</script>
