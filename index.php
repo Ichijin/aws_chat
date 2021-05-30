@@ -16,9 +16,9 @@
 
 <body>
     <div class="chatbot">
-        <div class="chatbot_ico">
+        <div class="chatbot_ico" id="chatbot_ico">
         </div>
-        <div class="chatbot_bord" style="display: none;">
+        <div class="chatbot_bord" id="chatbot_bord" style="display: none;">
             <div class="chatbot_talk" id="chatbot_talk">
                 <p class="chat-talk">
                     <span class="talk-icon">
@@ -33,7 +33,10 @@
                     <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
                 </div>
                 <div class="cp_item">
-                    <input type="submit" value="送信" class="btn-gradient-radius" />
+                    <input type="submit" value="送信" class="btn-gradient-orange" />
+                </div>
+                <div class="cp_item">
+                    <input type="submit" value="閉じる" class="btn-gradation-gray" />
                 </div>
             </div>
         </div>
@@ -52,10 +55,10 @@
 <script>
 $('.chatbot').on('click', function(){
     $('.chatbot_ico').hide();
-    $('.chatbot_bord').show();
+    $('#chatbot_bord').show();
 });
 
-$('.btn-gradient-radius').click(function(){
+$('.btn-gradient-orange').click(function(){
     if(!$('#speech').val()) return false;
 
     // 質問
@@ -79,5 +82,10 @@ $('.btn-gradient-radius').click(function(){
 
     var obj = document.getElementById('chatbot_talk');
     obj.scrollTop = obj.scrollHeight;
+});
+
+$('.btn-gradation-gray').click(function(){
+    $('#chatbot_bord').hide();
+    $('.chatbot_ico').show();
 });
 </script>
